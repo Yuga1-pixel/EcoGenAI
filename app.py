@@ -6,7 +6,7 @@ import streamlit as st  # 🎈 data web app development
 import requests  # Added import for HTTP requests
 
 # Your API key from Streamlit secrets or environment variables
-api_key = streamlit.secrets["api_key"]  # Replace with your API key
+api_key = st.secrets["api_key"]  # Replace with your API key
 
 # Load your dataset for the carbon footprint analysis
 df = pd.read_csv("datafinal.csv")
